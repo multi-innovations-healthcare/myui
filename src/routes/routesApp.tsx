@@ -34,7 +34,6 @@ const generateConsistentColor = (key: string): string => {
 };
 
 // ข้อมูลรวมของเส้นทางและเมนู
-// eslint-disable-next-line react-refresh/only-export-components
 export const combinedData: RouteItem[] = [
   {
     key: "HOME",
@@ -65,7 +64,7 @@ export const RoutesApp = combinedData
   .map(({ path, element }) => ({ path, element }));
 
 // สร้าง menuItems จากข้อมูลรวม
-// eslint-disable-next-line react-refresh/only-export-components
+
 export const menuItems = combinedData.map((item) => ({
   key: item.key,
   label: item.label,

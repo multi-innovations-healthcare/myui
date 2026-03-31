@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { getProtectedPaths } from '@/routes/protectedPaths';
 
 export const checkRoutePermission = (path: string, userData: any): boolean => {

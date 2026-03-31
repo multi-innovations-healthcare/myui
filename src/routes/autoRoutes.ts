@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { createElement, lazy, type ComponentType } from 'react';
 import type { RouteMeta } from '@/types/types';
 

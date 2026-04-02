@@ -112,7 +112,7 @@ function App() {
 
 
   return (
-    <div className="bg-background min-h-[100dvh] font-sans text-foreground selection:bg-indigo-100 dark:selection:bg-indigo-500/30 selection:text-indigo-900 dark:selection:text-indigo-200 flex transition-colors duration-300 relative">
+    <div className="bg-background min-h-dvh font-sans text-foreground selection:bg-indigo-100 dark:selection:bg-indigo-500/30 selection:text-indigo-900 dark:selection:text-indigo-200 flex transition-colors duration-300 relative">
       <Toaster position="top-center" richColors theme={theme} closeButton />
       <AnimatePresence mode="popLayout">
         {!isHomePage && (
@@ -133,7 +133,7 @@ function App() {
         )}
       </AnimatePresence>
 
-      <div id="main-scroll-area" className={`flex-1 flex flex-col min-h-[100dvh] w-full transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-x-hidden ${isHomePage ? 'pl-0' : (isSidebarOpen ? 'lg:pl-[18rem]' : 'lg:pl-[5rem]')}`}>
+      <div id="main-scroll-area" className={`flex-1 flex flex-col min-h-dvh w-full transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-x-hidden ${isHomePage ? 'pl-0' : (isSidebarOpen ? 'lg:pl-72' : 'lg:pl-20')}`}>
         <Header
           title={activePageTitle}
           onMenuClick={!isHomePage ? () => setSidebarOpen(!isSidebarOpen) : undefined}

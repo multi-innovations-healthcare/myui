@@ -1,6 +1,5 @@
 // src/routes/routesApp.tsx
-import { lazy, type ComponentType, type ReactNode } from 'react';
-import { Home } from 'lucide-react';
+import { type ComponentType, type ReactNode } from 'react';
 
 
 // โครงสร้างข้อมูลรวม
@@ -15,7 +14,7 @@ export interface RouteItem {
 }
 
 // Function to generate consistent color based on route key
-const generateConsistentColor = (key: string): string => {
+export const generateConsistentColor = (key: string): string => {
   const colors = [
     '#FF6B6B', '#4ECDC4', '#45B7D1', '#4c9c77', '#1342de',
     '#DDA0DD', '#98D8C8', '#cfa600', '#BB8FCE', '#85C1E2',
@@ -35,14 +34,14 @@ const generateConsistentColor = (key: string): string => {
 
 // ข้อมูลรวมของเส้นทางและเมนู
 export const combinedData: RouteItem[] = [
-  {
-    key: "HOME",
-    path: "/mydata-lite/home",
-    label: "หน้าหลัก",
-    icon: <Home />,
-    element: lazy(() => import("@/pages/home/page")),
-    color: generateConsistentColor("HOME")
-  },
+  // {
+  //   key: "HOME",
+  //   path: "/mydata-lite/home",
+  //   label: "หน้าหลัก",
+  //   icon: <Home />,
+  //   element: lazy(() => import("@/pages/home/page")), 
+  //   color: generateConsistentColor("HOME")
+  // },
   // {
   //   key: "A",
   //   path: "/mydata-lite/datastat",

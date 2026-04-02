@@ -58,7 +58,7 @@ const Header: React.FC<HeaderProps> = ({
   return (
     <header
       className={`
-        fixed top-0 left-0 right-0 z-[9999] w-full
+        fixed top-0 left-0 right-0 z-9999 w-full
         transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]
         ${isHero
           ? 'bg-background/40 backdrop-blur-2xl border-b border-gray-200 dark:border-gray-600'
@@ -67,7 +67,7 @@ const Header: React.FC<HeaderProps> = ({
       `}
     >
       {/* Subtle gradient line at the very top */}
-      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-indigo-500/60 to-transparent pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-indigo-500/60 to-transparent pointer-events-none" />
 
       <div
         className={`
@@ -87,8 +87,8 @@ const Header: React.FC<HeaderProps> = ({
               aria-label={isSidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'}
             >
               {isSidebarOpen
-                ? <PanelLeftClose className="w-5 h-5 flex-shrink-0" />
-                : <PanelLeftOpen className="w-5 h-5 flex-shrink-0" />
+                ? <PanelLeftClose className="w-5 h-5 shrink-0" />
+                : <PanelLeftOpen className="w-5 h-5 shrink-0" />
               }
             </button>
           )}
@@ -102,17 +102,20 @@ const Header: React.FC<HeaderProps> = ({
               {logo ?? (
                 <div
                   className={`
-                    relative rounded-xl flex items-center justify-center
-                    bg-gradient-to-br from-indigo-500 to-purple-600
-                    shadow-lg shadow-indigo-500/25
-                    group-hover:shadow-indigo-500/50 group-hover:scale-105
+                    relative flex shrink-0 items-center justify-center overflow-hidden rounded-xl
+                    group-hover:scale-105 group-hover:shadow-lg
                     transition-all duration-300
-                    ${isHero ? 'w-10 h-10' : 'w-8 h-8'}
+                    ${isHero ? 'size-10' : 'size-8'}
                   `}
                 >
-                  {/* Inner highlight */}
-                  <div className="absolute inset-0 rounded-xl bg-gradient-to-b from-white/20 to-transparent pointer-events-none" />
-                  <span className={`relative text-white font-black ${isHero ? 'text-base' : 'text-sm'}`}>M</span>
+                  <img
+                    src="/icons/icon-512x512.png"
+                    alt=""
+                    width={40}
+                    height={40}
+                    decoding="async"
+                    className="size-full object-contain"
+                  />
                 </div>
               )}
 
@@ -176,14 +179,14 @@ const Header: React.FC<HeaderProps> = ({
                 border transition-all duration-300
                 hover:border-indigo-500/50 group
                 ${isHero
-                  ? 'border-border/50 border-gray-400 dark:border-gray-600 bg-gray-50 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 w-56 lg:w-72'
-                  : 'border-border border-gray-400 dark:border-gray-600 bg-gray-50 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 w-44 md:w-56 lg:w-64'
+                  ? 'border-border/50 dark:border-gray-600 bg-gray-50 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 w-56 lg:w-72'
+                  : 'border-border dark:border-gray-600 bg-gray-50 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 w-44 md:w-56 lg:w-64'
                 }
               `}
             >
               <Search className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
               <span className="flex-1 text-sm text-muted-foreground truncate">Search...</span>
-              <kbd className="hidden lg:inline-flex items-center gap-0.5 rounded-md border border-border/70 border-gray-400 dark:border-gray-600 bg-background/80 px-1.5 font-mono text-[10px] text-muted-foreground">
+              <kbd className="hidden lg:inline-flex items-center gap-0.5 rounded-md border border-border/70 dark:border-gray-600 bg-background/80 px-1.5 font-mono text-[10px] text-muted-foreground">
                 ⌃K
               </kbd>
             </button>
@@ -219,7 +222,7 @@ const Header: React.FC<HeaderProps> = ({
           <a
             href="https://github.com/multi-innovations-healthcare/myui"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
             className="p-2 text-muted-foreground hover:text-foreground hover:bg-card/80 rounded-xl transition-all"
             aria-label="GitHub Repository"
           >

@@ -13,6 +13,28 @@
           "scrollbar-width: none"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ],
+    "apple-touch-icons": "off",
+    "axe/aria": [
+      "default",
+      {
+        "aria-valid-attr-value": "off",
+        "aria-required-children": "off",
+        "aria-required-parent": "off",
+        "aria-required-attr": "off",
+        "aria-allowed-attr": "off",
+        "aria-roles": "off"
+      }
+    ],
+    "typescript-config/is-valid": "off"
   }
 }

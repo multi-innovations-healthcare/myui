@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap");
 /* Tailwind + MyUI layers: bundled with JS via index.css. For your own Tailwind v4 build, import @import "@multi_innovations_healthcare/myui/styles" after tailwindcss — see Quickstart. */
 @import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@iconify/tailwind4";
+
 @import "./styles.css";

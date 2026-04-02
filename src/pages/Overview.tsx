@@ -30,8 +30,8 @@ const SimpleHighlighter = ({ code }: { code: string }) => {
         {lines.map((line, i) => {
           const highlighted = line
             .replace(/</g, '&lt;').replace(/>/g, '&gt;')
-            .replace(/(\/\/.*)/g, '<span class="text-gray-500 italic">$1</span>')
             .replace(/('.*?'|".*?"|`.*?`)/g, '<span class="text-green-400">$1</span>')
+            .replace(/(?<!:)\/\/.*$/g, '<span class="text-gray-500 italic">$&</span>')
             .replace(/\b(import|export|default|function|return|from|const|let|var|type|interface)\b/g, '<span class="text-blue-400">$1</span>')
             .replace(/\b([A-Z][a-zA-Z0-9_]*)\b/g, '<span class="text-yellow-200">$1</span>')
             .replace(/\b(className|onClick)\b/g, '<span class="text-blue-300">$1</span>');
@@ -55,7 +55,7 @@ export default function Overview() {
     setTimeout(() => setHasCopiedCode(''), 2000);
   };
 
-  const usageCode = `import { ToastProvider, Button, toast } from 'myui';
+  const usageCode = `import { ToastProvider, Button, toast } from '@multi_innovations_healthcare/myui';
 
 function App() {
   return (
@@ -208,7 +208,7 @@ function App() {
           </Button>
 
           <a
-            href="https://github.com/tetetee/myui"
+            href="https://github.com/multi-innovations-healthcare/myui"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:flex-1 h-14 px-6 text-lg font-bold inline-flex items-center justify-center bg-card/50 backdrop-blur-md border border-border border-gray-200 dark:border-gray-600 hover:border-indigo-500/50 hover:bg-card text-foreground rounded-2xl transition-all shadow-sm hover:shadow-indigo-500/10 hover:-translate-y-0.5"

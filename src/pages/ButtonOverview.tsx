@@ -68,7 +68,7 @@ export default function ButtonOverview() {
           title="Button"
           description="A versatile button component that triggers actions and events with a premium matrix architecture."
           icon={<MousePointer2 />}
-          importCode="import { Button } from 'myui';"
+          importCode="import { Button } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Type & Variants */}

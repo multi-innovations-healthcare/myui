@@ -47,7 +47,7 @@ export default function ComponentsPage() {
           title="Component Library"
           description="A comprehensive collection of professionally designed, accessible, and high-performance UI components."
           icon={<Layers />}
-          importCode="import { Button, Checkbox, Input, Select, Modal, Toast, Table, Card } from 'myui';"
+          importCode="import { Button, Checkbox, Input, Select, Modal, Toast, Table, Card } from '@multi_innovations_healthcare/myui';"
         />
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

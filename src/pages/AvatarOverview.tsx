@@ -39,7 +39,7 @@ export default function AvatarOverview() {
           title="Avatar"
           description="Visual representation of a user or entity. Supports images, auto-generated initials, custom icons, and real-time status tracking via animated dots."
           icon={<User />}
-          importCode="import { Avatar } from 'myui';"
+          importCode="import { Avatar } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Sizes */}

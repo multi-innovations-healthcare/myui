@@ -91,7 +91,7 @@ export default function ScheduleCalendarOverview() {
           title="Schedule Calendar"
           description="A high-performance schedule engine for managing appointments, deep work sessions, and resource scheduling with automatic overlap handling."
           icon={<Layout className="text-white" />}
-          importCode="import { ScheduleCalendar } from 'myui';"
+          importCode="import { ScheduleCalendar } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* Introduction */}

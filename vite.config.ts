@@ -4,6 +4,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import tailwindcss from '@tailwindcss/vite'
 import dts from 'vite-plugin-dts'
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,7 +17,9 @@ export default defineConfig(() => {
     plugins: [
       react(),
       tailwindcss(),
-      dts({ insertTypesEntry: true, include: ['src'], tsconfigPath: './tsconfig.app.json' })
+      dts({ insertTypesEntry: true, include: ['src'], tsconfigPath: './tsconfig.app.json' }),
+      // Ship styles inside JS so consuming apps get Tailwind/component styles from `import { … } from '@scope/pkg'` alone.
+      cssInjectedByJsPlugin(),
     ],
     resolve: {
       alias: {
@@ -35,9 +38,10 @@ export default defineConfig(() => {
         output: {
           globals: {
             react: 'React',
-            'react-dom': 'ReactDOM'
-          }
-        }
+            'react-dom': 'ReactDOM',
+            'react/jsx-runtime': 'react/jsx-runtime',
+          },
+        },
       }
     },
     base: envBasePath,

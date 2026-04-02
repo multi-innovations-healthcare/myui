@@ -63,7 +63,7 @@ export default function CheckboxOverview() {
           title="Checkbox"
           description="A high-fidelity checkbox with support for indeterminate state, rich labels, and accessible animations."
           icon={<CheckSquare />}
-          importCode="import { Checkbox } from 'myui';"
+          importCode="import { Checkbox } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic Usage */}

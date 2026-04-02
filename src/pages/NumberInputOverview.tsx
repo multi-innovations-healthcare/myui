@@ -58,7 +58,7 @@ export default function NumberInputOverview() {
           title="NumberInput"
           description="A precise numerical input component with smart arithmetic handling and customizable step controls."
           icon={<Hash />}
-          importCode="import { NumberInput } from 'myui';"
+          importCode="import { NumberInput } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic Usage */}

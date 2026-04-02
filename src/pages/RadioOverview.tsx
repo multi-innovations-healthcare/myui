@@ -55,7 +55,7 @@ export default function RadioOverview() {
           title="Radio"
           description="A high-fidelity radio group for selecting a single option from multiple choices with support for rich descriptions."
           icon={<CircleDot />}
-          importCode="import { RadioGroup } from 'myui';"
+          importCode="import { RadioGroup } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic Usage */}

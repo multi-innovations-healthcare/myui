@@ -41,7 +41,7 @@ export default function BreadcrumbOverview() {
           title="Breadcrumb"
           description="A navigation component that shows users their current location in a hierarchy. Supports custom separators, icons, and automatic collapsing for long paths."
           icon={<Map />}
-          importCode="import { Breadcrumb } from 'myui';"
+          importCode="import { Breadcrumb } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic */}

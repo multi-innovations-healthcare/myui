@@ -92,7 +92,7 @@ export default function ComboboxOverview() {
           title="Combobox"
           description="An autocomplete input with dropdown selection, keyboard navigation, async search, and multi-select capabilities."
           icon={<Search />}
-          importCode="import { Combobox } from 'myui';"
+          importCode="import { Combobox } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic & Search */}

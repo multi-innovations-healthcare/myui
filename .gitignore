@@ -55,3 +55,8 @@ temp
 temp/*
 ./temp
 ./temp/*
+
+/scripts
+/scripts/*
+./scripts
+./scripts/*

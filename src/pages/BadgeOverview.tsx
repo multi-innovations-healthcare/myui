@@ -39,7 +39,7 @@ export default function BadgeOverview() {
           title="Badge"
           description="Small status descriptors used for highlighting categories, properties, or numeric counts. Supports multiple visual variants and a distinct dot mode for status tracking."
           icon={<Tag />}
-          importCode="import { Badge } from 'myui';"
+          importCode="import { Badge } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Variants */}

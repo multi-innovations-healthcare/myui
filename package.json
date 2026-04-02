@@ -1,8 +1,28 @@
 {
-  "name": "myui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@multi_innovations_healthcare/myui",
+  "private": false,
+  "version": "0.1.21",
+  "license": "MIT",
+  "description": "MyUI is a library of components for building healthcare applications.",
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "library",
+    "healthcare"
+  ],
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/multi-innovations-healthcare/myui.git"
+  },
+  "homepage": "https://myui.mih.co.th",
+  "bugs": {
+    "url": "https://github.com/multi-innovations-healthcare/myui/issues"
+  },
   "main": "dist/myui.umd.js",
   "module": "dist/myui.es.js",
   "types": "dist/index.d.ts",
@@ -12,12 +32,23 @@
       "require": "./dist/myui.umd.js",
       "types": "./dist/index.d.ts"
     },
-    "./style.css": "./dist/style.css"
+    "./styles": "./src/styles.css"
   },
+  "sideEffects": [
+    "./dist/**/*.js",
+    "./src/prelude.css",
+    "./src/styles.css"
+  ],
+  "files": [
+    "dist",
+    "src/prelude.css",
+    "src/styles.css"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "prepublishOnly": "npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -71,6 +102,7 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.56.1",
     "vite": "^8.0.0",
+    "vite-plugin-css-injected-by-js": "^4.0.1",
     "vite-plugin-dts": "^4.5.4"
   }
 }

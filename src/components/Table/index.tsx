@@ -210,9 +210,11 @@ export function Table<T extends Record<string, any>>({
 
   // --- Pagination ---
   const isPaginated = pagination !== false && pagination !== undefined;
+  const paginationServerTotal = isPaginated ? pagination.total : undefined;
   const currentPage = isPaginated ? (pagination?.current ?? 1) : 1;
   const pageSize = isPaginated ? (pagination?.pageSize ?? 10) : 10;
-  const total = isPaginated && pagination?.total != null ? pagination.total : dataSource.length;
+  const total =
+    isPaginated && paginationServerTotal != null ? paginationServerTotal : dataSource.length;
   const totalPages = Math.ceil(total / pageSize);
   const paginationPlacement = isPaginated ? (pagination?.placement ?? 'bottom') : 'bottom';
   const showPagination = isPaginated && total > pageSize;
@@ -457,13 +459,22 @@ export function Table<T extends Record<string, any>>({
     }
 
     // Local pagination — skip when pagination.total is set (server controls total)
-    if (isPaginated && !pagination?.total) {
+    if (isPaginated && paginationServerTotal == null) {
       const start = (currentPage - 1) * pageSize;
       data = data.slice(start, start + pageSize);
     }
 
     return data;
-  }, [dataSource, sortState, onChange, activeColumns, isPaginated, pagination?.total, currentPage, pageSize]);
+  }, [
+    dataSource,
+    sortState,
+    onChange,
+    activeColumns,
+    isPaginated,
+    paginationServerTotal,
+    currentPage,
+    pageSize,
+  ]);
 
   const colCount = (rowSelection ? 1 : 0) + (hasExpand ? 1 : 0) + activeColumns.length;
 

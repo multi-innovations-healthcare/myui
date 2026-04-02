@@ -1,0 +1,6 @@
+/* MyUI Tailwind v4 fragment — use in your app after @import "tailwindcss"; */
+
+@import "tw-animate-css";
+@import "@fontsource-variable/geist";
+
+@source "../dist/**/*.{js,ts,jsx,tsx}";

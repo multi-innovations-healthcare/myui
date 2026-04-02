@@ -58,7 +58,7 @@ export default function DropdownOverview() {
           title="Dropdown"
           description="A beautiful, accessible overlay menu component with floating animations and intelligent collision detection."
           icon={<ChevronDown />}
-          importCode="import { Dropdown } from 'myui';"
+          importCode="import { Dropdown } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic Usage */}

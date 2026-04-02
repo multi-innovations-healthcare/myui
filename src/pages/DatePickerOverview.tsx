@@ -63,7 +63,7 @@ export default function DatePickerOverview() {
           title="DatePicker"
           description="A premium date selection component with calendar popup, range picking, format configuration, and date constraints."
           icon={<CalendarDays />}
-          importCode="import { DatePicker, DateRangePicker } from 'myui';"
+          importCode="import { DatePicker, DateRangePicker } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic */}

@@ -44,7 +44,7 @@ export default function SkeletonOverview() {
           title="Skeleton"
           description="A placeholder component used to provide visual feedback while content is loading, reducing perceived wait time."
           icon={<Layout />}
-          importCode="import { Skeleton } from 'myui';"
+          importCode="import { Skeleton } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Variants */}

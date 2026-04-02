@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# MyUI (`@multi_innovations_healthcare/myui`)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React component library for building healthcare applications.
 
-Currently, two official plugins are available:
+| Resource | Link |
+| --- | --- |
+| Documentation | [myui.mih.co.th](https://myui.mih.co.th) |
+| Source code | [github.com/multi-innovations-healthcare/myui](https://github.com/multi-innovations-healthcare/myui) |
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Install
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install @multi_innovations_healthcare/myui
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Peer dependencies: `react` and `react-dom` (see [`package.json`](https://github.com/multi-innovations-healthcare/myui/blob/main/package.json)).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Usage
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```tsx
+import { Button } from "@multi_innovations_healthcare/myui";
+
+export default function App() {
+  return (
+    <Button variant="solid" color="primary">
+      Solid Primary
+    </Button>
+  );
+}
 ```
+
+Styles ship inside the JS bundle: **you do not need** a separate `import ".../style.css"` or a project **`tailwind.config.js`** for MyUI components to look correct. After upgrading, reinstall the package and restart the dev server.
+
+For full API details and examples, see the **[documentation site](https://myui.mih.co.th)**.
+
+## License
+
+[MIT](https://github.com/multi-innovations-healthcare/myui/blob/main/LICENSE)

@@ -44,7 +44,7 @@ export default function AlertOverview() {
           title="Alert"
           description="Displays a prominent message to provide contextual feedback or inform the user about important information."
           icon={<AlertCircle />}
-          importCode="import { Alert } from 'myui';"
+          importCode="import { Alert } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Variants */}

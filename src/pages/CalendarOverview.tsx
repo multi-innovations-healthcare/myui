@@ -66,7 +66,7 @@ export default function CalendarOverview() {
           title="Calendar"
           description="A powerful, animated calendar grid supporting complex selection constraints, event markers, custom rendering, and deep i18n localization."
           icon={<LucideCalendar />}
-          importCode="import { Calendar } from 'myui';"
+          importCode="import { Calendar } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Selection Modes */}

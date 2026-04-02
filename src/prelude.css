@@ -1,0 +1,3 @@
+/* Tailwind + MyUI layers: bundled with JS via index.css. For your own Tailwind v4 build, import @import "@multi_innovations_healthcare/myui/styles" after tailwindcss — see Quickstart. */
+@import "tailwindcss";
+@import "./styles.css";

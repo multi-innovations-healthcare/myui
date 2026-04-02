@@ -79,7 +79,7 @@ export default function ToastOverview() {
           title="Toast"
           description="A responsive notification system that provides non-intrusive feedback to the user on background processes."
           icon={<Bell />}
-          importCode="import { useToast, ToastProvider } from 'myui';"
+          importCode="import { useToast, ToastProvider } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Toast Variants */}

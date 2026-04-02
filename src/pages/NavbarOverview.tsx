@@ -47,7 +47,11 @@ export default function NavbarOverview() {
   const baseNavItems = [
     { label: 'Docs', href: '/introduction', icon: <BookOpen className="w-4 h-4" /> },
     { label: 'Components', href: '/components', icon: <LayoutGrid className="w-4 h-4" />, badge: 'New' },
-    { label: 'GitHub', href: '#', icon: <Github className="w-4 h-4" /> },
+    {
+      label: 'GitHub',
+      href: 'https://github.com/multi-innovations-healthcare/myui',
+      icon: <Github className="w-4 h-4" />,
+    },
   ];
 
   const dropdownNavItems = [
@@ -66,7 +70,10 @@ export default function NavbarOverview() {
         { label: 'Settings', href: '#', icon: <Settings className="w-4 h-4" /> },
       ],
     },
-    { label: 'GitHub', href: '#' },
+    {
+      label: 'GitHub',
+      href: 'https://github.com/multi-innovations-healthcare/myui',
+    },
   ];
 
   return (
@@ -76,7 +83,7 @@ export default function NavbarOverview() {
           title="Navbar"
           description="A responsive navigation bar with sticky positioning, dropdowns, action slots, and a mobile-responsive hamburger menu."
           icon={<Navigation />}
-          importCode="import { Navbar } from 'myui';"
+          importCode="import { Navbar } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic Navbar */}

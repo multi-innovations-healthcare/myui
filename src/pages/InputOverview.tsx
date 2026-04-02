@@ -65,7 +65,7 @@ export default function InputOverview() {
           title="Input"
           description="A versatile text field system for high-fidelity data entry with support for icons, validation, and auto-resizing textareas."
           icon={<Type />}
-          importCode="import { Input, TextArea } from 'myui';"
+          importCode="import { Input, TextArea } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic Usage */}

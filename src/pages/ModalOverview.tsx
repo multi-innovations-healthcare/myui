@@ -100,7 +100,7 @@ export default function ModalOverview() {
           title="Modal"
           description="Flexible, accessible, and high-performance overlay systems including Dialogs, Drawers, and Alerts."
           icon={<Maximize2 />}
-          importCode="import { Modal, Drawer, Alert } from 'myui';"
+          importCode="import { Modal, Drawer, Alert } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Composition API */}

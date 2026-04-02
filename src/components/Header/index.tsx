@@ -217,7 +217,7 @@ const Header: React.FC<HeaderProps> = ({
 
           {/* GitHub */}
           <a
-            href="https://github.com"
+            href="https://github.com/multi-innovations-healthcare/myui"
             target="_blank"
             rel="noreferrer"
             className="p-2 text-muted-foreground hover:text-foreground hover:bg-card/80 rounded-xl transition-all"

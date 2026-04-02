@@ -44,7 +44,7 @@ export const DocHeader: React.FC<DocHeaderProps> = ({ title, description, icon, 
           <div className="flex items-center gap-3 overflow-hidden">
             <Terminal className="w-4 h-4 text-muted-foreground shrink-0" />
             <code className="text-[13px] font-mono whitespace-nowrap text-foreground">
-              <span className="text-indigo-400">import</span> {`{ ${title} }`} <span className="text-indigo-400">from</span> <span className="text-cyan-400">'myui'</span><span className="text-muted-foreground">;</span>
+              <span className="text-indigo-400">import</span> {`{ ${title} }`} <span className="text-indigo-400">from</span> <span className="text-cyan-400">'@multi_innovations_healthcare/myui'</span><span className="text-muted-foreground">;</span>
             </code>
           </div>
           <button 

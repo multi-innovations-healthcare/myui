@@ -44,7 +44,7 @@ export default function AlertDialogOverview() {
           title="Alert Dialog"
           description="A modal dialog that interrupts the user with important content and expects a response. Typically used for destructive actions."
           icon={<AlertTriangle />}
-          importCode="import { Alert as AlertDialog } from 'myui';"
+          importCode="import { Alert as AlertDialog } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic */}

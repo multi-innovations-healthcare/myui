@@ -3,10 +3,10 @@ import { Check, Copy, Terminal } from "lucide-react";
 import { toast } from "sonner";
 
 const commands = {
-  npm: "npm install myui",
-  pnpm: "pnpm add myui",
-  yarn: "yarn add myui",
-  bun: "bun add myui",
+  npm: "npm install @multi_innovations_healthcare/myui",
+  pnpm: "pnpm add @multi_innovations_healthcare/myui",
+  yarn: "yarn add @multi_innovations_healthcare/myui",
+  bun: "bun add @multi_innovations_healthcare/myui",
 };
 
 export default function InstallTabs() {

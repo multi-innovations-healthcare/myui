@@ -74,7 +74,7 @@ export default function SelectOverview() {
           title="Select"
           description="A high-performance selection component supporting search, multi-select, and complex data grouping."
           icon={<Layers />}
-          importCode="import { Select } from 'myui';"
+          importCode="import { Select } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic & Multiple */}

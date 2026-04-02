@@ -46,7 +46,7 @@ export default function TooltipOverview() {
           title="Tooltip"
           description="A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it."
           icon={<MessageSquare />}
-          importCode="import { Tooltip } from 'myui';"
+          importCode="import { Tooltip } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Usage */}

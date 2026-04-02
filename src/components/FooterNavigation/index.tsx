@@ -95,7 +95,7 @@ const FooterNavigation: React.FC = () => {
 
         {/* GitHub Button - Premium Gradient */}
         <a
-          href="https://github.com/myui-org/myui"
+          href="https://github.com/multi-innovations-healthcare/myui"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative flex items-center justify-center gap-3 px-8 h-14 rounded-2xl 

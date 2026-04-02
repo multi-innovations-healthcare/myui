@@ -42,7 +42,7 @@ export default function TabsOverview() {
           title="Tabs"
           description="A flexible tab navigation component to organize content into separate views. Supports multiple visual variants, icons, badges, and both controlled & uncontrolled modes."
           icon={<BarChart2 />}
-          importCode="import { Tabs } from 'myui';"
+          importCode="import { Tabs } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Variants */}

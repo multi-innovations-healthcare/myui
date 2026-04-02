@@ -47,7 +47,7 @@ export default function ProgressOverview() {
           title="Progress"
           description="An indicator showing the completion status of a task, typically displayed as a progress bar."
           icon={<Activity />}
-          importCode="import { Progress } from 'myui';"
+          importCode="import { Progress } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Variants */}

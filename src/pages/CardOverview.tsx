@@ -42,7 +42,7 @@ export default function CardOverview() {
           title="Card"
           description="A flexible content container for grouping related information. Supports headers, footers, cover images, and premium hover interactions."
           icon={<Layout />}
-          importCode="import { Card } from 'myui';"
+          importCode="import { Card } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic */}

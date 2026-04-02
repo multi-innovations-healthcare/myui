@@ -60,7 +60,7 @@ export default function SwitchOverview() {
           title="Switch"
           description="A smooth, animated toggle switch designed for binary choices and system preferences with peak tactile response."
           icon={<ToggleRight />}
-          importCode="import { Switch } from 'myui';"
+          importCode="import { Switch } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic Usage */}

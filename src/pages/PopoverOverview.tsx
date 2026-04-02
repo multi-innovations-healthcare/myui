@@ -49,7 +49,7 @@ export default function PopoverOverview() {
           title="Popover"
           description="A floating content layer anchored to a trigger element. The foundation for tooltips, dropdowns, and all floating UI."
           icon={<Layers />}
-          importCode="import { Popover, PopoverTrigger, PopoverContent } from 'myui';"
+          importCode="import { Popover, PopoverTrigger, PopoverContent } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic */}

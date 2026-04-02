@@ -47,7 +47,7 @@ export default function DrawerOverview() {
           title="Drawer"
           description="A panel that slides in from the edge of the screen, useful for menus, filters, or additional context."
           icon={<Menu />}
-          importCode="import { Drawer } from 'myui';"
+          importCode="import { Drawer } from '@multi_innovations_healthcare/myui';"
         />
 
         {/* 1. Basic */}
